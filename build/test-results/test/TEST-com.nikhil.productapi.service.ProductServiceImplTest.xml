@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nikhil.productapi.service.ProductServiceImplTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T10:14:13" hostname="LISSA" time="0.14">
+  <properties/>
+  <testcase name="getById_returnsProduct_whenExists()" classname="com.nikhil.productapi.service.ProductServiceImplTest" time="0.105"/>
+  <testcase name="getById_throws_whenNotFound()" classname="com.nikhil.productapi.service.ProductServiceImplTest" time="0.008"/>
+  <testcase name="delete_removesProduct_andTriggersAuditLog()" classname="com.nikhil.productapi.service.ProductServiceImplTest" time="0.006"/>
+  <testcase name="create_savesProduct_andTriggersAuditLog()" classname="com.nikhil.productapi.service.ProductServiceImplTest" time="0.006"/>
+  <testcase name="update_throws_whenProductMissing()" classname="com.nikhil.productapi.service.ProductServiceImplTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

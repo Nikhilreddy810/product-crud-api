@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nikhil.productapi.controller.ProductControllerIT" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T10:14:09" hostname="LISSA" time="2.169">
+  <properties/>
+  <testcase name="createProduct_blankName_returns400()" classname="com.nikhil.productapi.controller.ProductControllerIT" time="1.898"/>
+  <testcase name="createAndFetchProduct_success()" classname="com.nikhil.productapi.controller.ProductControllerIT" time="0.223"/>
+  <testcase name="createProduct_forbiddenForNonAdmin()" classname="com.nikhil.productapi.controller.ProductControllerIT" time="0.011"/>
+  <testcase name="getProducts_unauthenticated_returns401()" classname="com.nikhil.productapi.controller.ProductControllerIT" time="0.014"/>
+  <testcase name="getById_notFound_returns404()" classname="com.nikhil.productapi.controller.ProductControllerIT" time="0.013"/>
+  <system-out><![CDATA[15:43:51.234 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.nikhil.productapi.controller.ProductControllerIT]: ProductControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:43:51.609 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.nikhil.productapi.ProductApiApplication for test class com.nikhil.productapi.controller.ProductControllerIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-09-01T15:43:52.990+05:30  INFO 22288 --- [product-api] [    Test worker] c.n.p.controller.ProductControllerIT     : Starting ProductControllerIT using Java 21.0.7 with PID 22288 (started by levak in C:\Users\levak\Downloads\product-api\product-api)
+2026-09-01T15:43:52.994+05:30  INFO 22288 --- [product-api] [    Test worker] c.n.p.controller.ProductControllerIT     : The following 1 profile is active: "test"
+2026-09-01T15:43:55.756+05:30  INFO 22288 --- [product-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-09-01T15:43:55.762+05:30  INFO 22288 --- [product-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-01T15:43:56.284+05:30  INFO 22288 --- [product-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 500 ms. Found 4 JPA repository interfaces.
+2026-09-01T15:43:56.338+05:30  INFO 22288 --- [product-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-09-01T15:43:56.342+05:30  INFO 22288 --- [product-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-09-01T15:43:56.394+05:30  INFO 22288 --- [product-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nikhil.productapi.repository.AppUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-09-01T15:43:56.395+05:30  INFO 22288 --- [product-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nikhil.productapi.repository.AuditLogRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-09-01T15:43:56.400+05:30  INFO 22288 --- [product-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nikhil.productapi.repository.ItemRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-09-01T15:43:56.401+05:30  INFO 22288 --- [product-api] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nikhil.productapi.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-09-01T15:43:56.401+05:30  INFO 22288 --- [product-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2026-09-01T15:43:57.950+05:30  INFO 22288 --- [product-api] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-01T15:43:58.165+05:30  INFO 22288 --- [product-api] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-09-01T15:43:58.300+05:30  INFO 22288 --- [product-api] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-01T15:43:59.392+05:30  INFO 22288 --- [product-api] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-01T15:43:59.480+05:30  INFO 22288 --- [product-api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-01T15:44:00.094+05:30  INFO 22288 --- [product-api] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-09-01T15:44:00.099+05:30  INFO 22288 --- [product-api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-01T15:44:00.188+05:30  WARN 22288 --- [product-api] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-01T15:44:03.127+05:30  INFO 22288 --- [product-api] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-01T15:44:03.392+05:30  INFO 22288 --- [product-api] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-01T15:44:04.607+05:30  INFO 22288 --- [product-api] [    Test worker] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-09-01T15:44:04.608+05:30  WARN 22288 --- [product-api] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-09-01T15:44:06.129+05:30  WARN 22288 --- [product-api] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-01T15:44:08.386+05:30  INFO 22288 --- [product-api] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-09-01T15:44:08.387+05:30  INFO 22288 --- [product-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-01T15:44:08.391+05:30  INFO 22288 --- [product-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-09-01T15:44:08.474+05:30  INFO 22288 --- [product-api] [    Test worker] c.n.p.controller.ProductControllerIT     : Started ProductControllerIT in 16.405 seconds (process running for 19.919)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\levak\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.19\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
