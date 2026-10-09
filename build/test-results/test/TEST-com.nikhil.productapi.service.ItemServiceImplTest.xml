@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nikhil.productapi.service.ItemServiceImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T10:14:13" hostname="LISSA" time="0.526">
+  <properties/>
+  <testcase name="addItem_savesItem_whenProductExists()" classname="com.nikhil.productapi.service.ItemServiceImplTest" time="0.424"/>
+  <testcase name="addItem_throws_whenProductMissing()" classname="com.nikhil.productapi.service.ItemServiceImplTest" time="0.007"/>
+  <testcase name="getByProductId_returnsPage_whenProductExists()" classname="com.nikhil.productapi.service.ItemServiceImplTest" time="0.075"/>
+  <testcase name="getByProductId_throws_whenProductMissing()" classname="com.nikhil.productapi.service.ItemServiceImplTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

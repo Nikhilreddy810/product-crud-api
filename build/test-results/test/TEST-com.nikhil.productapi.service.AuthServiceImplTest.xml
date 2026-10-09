@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nikhil.productapi.service.AuthServiceImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-09-01T10:14:11" hostname="LISSA" time="1.564">
+  <properties/>
+  <testcase name="login_returnsTokens_whenCredentialsValid()" classname="com.nikhil.productapi.service.AuthServiceImplTest" time="1.353"/>
+  <testcase name="logout_doesNotThrow_whenTokenAlreadyInvalid()" classname="com.nikhil.productapi.service.AuthServiceImplTest" time="0.026"/>
+  <testcase name="refresh_throws_whenTokenUnparseable()" classname="com.nikhil.productapi.service.AuthServiceImplTest" time="0.021"/>
+  <testcase name="refresh_rotatesToken_whenValid()" classname="com.nikhil.productapi.service.AuthServiceImplTest" time="0.024"/>
+  <testcase name="login_throws_whenAuthenticationFails()" classname="com.nikhil.productapi.service.AuthServiceImplTest" time="0.056"/>
+  <testcase name="logout_revokesToken()" classname="com.nikhil.productapi.service.AuthServiceImplTest" time="0.019"/>
+  <testcase name="refresh_throws_whenTokenRevokedOrExpired()" classname="com.nikhil.productapi.service.AuthServiceImplTest" time="0.025"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
