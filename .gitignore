@@ -1,0 +1,14 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+application-local.yml
+
+# Gradle / Java build outputs
+.gradle/
+build/
+
+# IDE files
+.classpath
+.project
+.settings/
