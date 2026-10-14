@@ -12,3 +12,25 @@ build/
 .classpath
 .project
 .settings/
+
+# Terraform generated files and local state
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+/build/
+/bin/
