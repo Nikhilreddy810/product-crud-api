@@ -34,3 +34,4 @@ override.tf.json
 # Build output
 /build/
 /bin/
+terraform/ec2-console-output.txt
